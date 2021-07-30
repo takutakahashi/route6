@@ -20,4 +20,12 @@ resources:
   kind: NAT
   path: github.com/takutakahashi/route6/api/v1
   version: v1
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: route6.io
+  kind: Interface
+  path: github.com/takutakahashi/route6/api/v1
+  version: v1
 version: "3"
