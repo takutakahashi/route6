@@ -1,0 +1,6 @@
+domain: route6.io
+layout:
+- go.kubebuilder.io/v3
+projectName: route6
+repo: github.com/takutakahashi/route6
+version: "3"
