@@ -9,6 +9,58 @@ rules:
 - apiGroups:
   - route6.io
   resources:
+  - interfaces
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - route6.io
+  resources:
+  - interfaces/finalizers
+  verbs:
+  - update
+- apiGroups:
+  - route6.io
+  resources:
+  - interfaces/status
+  verbs:
+  - get
+  - patch
+  - update
+- apiGroups:
+  - route6.io
+  resources:
+  - nats
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - route6.io
+  resources:
+  - nats/finalizers
+  verbs:
+  - update
+- apiGroups:
+  - route6.io
+  resources:
+  - nats/status
+  verbs:
+  - get
+  - patch
+  - update
+- apiGroups:
+  - route6.io
+  resources:
   - routes
   verbs:
   - create

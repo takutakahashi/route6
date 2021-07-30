@@ -20,7 +20,7 @@ func Apply(node *corev1.Node, i *v1.Interface) error {
 	if ownDevice.Name == "" {
 		return errors.New("no device found on this node")
 	}
-	dev, err := netlink.LinkByName("lo")
+	dev, err := netlink.LinkByName(ownDevice.Name)
 	if err != nil {
 		return errors.Wrap(err, "failed to find device")
 	}
