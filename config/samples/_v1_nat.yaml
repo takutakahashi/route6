@@ -1,0 +1,7 @@
+apiVersion: route6.io/v1
+kind: NAT
+metadata:
+  name: nat-sample
+spec:
+  # Add fields here
+  foo: bar

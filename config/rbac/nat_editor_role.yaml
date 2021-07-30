@@ -1,0 +1,24 @@
+# permissions for end users to edit nats.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: nat-editor-role
+rules:
+- apiGroups:
+  - route6.io
+  resources:
+  - nats
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - route6.io
+  resources:
+  - nats/status
+  verbs:
+  - get
