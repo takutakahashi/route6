@@ -3,4 +3,13 @@ layout:
 - go.kubebuilder.io/v3
 projectName: route6
 repo: github.com/takutakahashi/route6
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: route6.io
+  kind: Route
+  path: github.com/takutakahashi/route6/api/v1
+  version: v1
 version: "3"
